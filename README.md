@@ -446,6 +446,34 @@ route add -net 192.213.12.0 netmask 255.255.252.0 gw 192.213.0.26
 ### Testing
 Berikut beberapa hasil testing:
 
+- **Client - Client**
+
+![CC](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/74baec1a-8246-45ff-a04a-399b08cda4c8)
+
+- **Client - Server**
+
+![CS](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/54f8b548-6b50-4200-ba2a-a018808be94c)
+
+- **Client - Router**
+
+![CR](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/2727c8ed-8885-42eb-ab22-e65d54121e28)
+
+- **Server - Server**
+
+![SS](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/2f64c7f3-6bb6-42bb-9236-d7598429a4a0)
+
+- **Server - Router**
+
+![SR](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/4e7f39ca-41d4-46cc-a980-2f752359ee54)
+
+- **Router - Router**
+
+![RR](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/2a45466f-6925-4b9e-acf1-c6a4a1df77aa)
+
+- **Ping Google**
+
+![ping google](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/74723887-1571-485b-9313-c113af463d5d)
+
 $~$
 
 ## CIDR
@@ -503,7 +531,7 @@ Berikut konfigurasi pada masing-masing router untuk melakukan routing:
 
 ![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/b9d02881-c9a6-4eeb-968c-8130db461923)
 
-- **Lawime**
+- **Lawine**
 
 ![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/b9c8d17d-0bc4-4603-9f1c-b1363aa3e64c)
 
@@ -521,3 +549,27 @@ Berikut konfigurasi pada masing-masing router untuk melakukan routing:
 
 ### Testing
 Berikut beberapa hasil testing:
+
+- **Client - Client**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/a382abf2-3028-4972-ab99-429020fd9654)
+
+- **Client - Server**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/fd8a88a1-ddd8-4a96-ae11-947e45af1706)
+
+- **Client - Router**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/f332b64a-4c75-4db6-8f7d-47f96c425cd4)
+
+- **Server - Server**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/8fdd4c24-a932-4c77-a440-fb5693f4a1b3)
+
+- **Server - Router**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/a5ee2dc8-a41b-40bb-80d4-add3a09df971)
+
+- **Router - Router**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/2197f513-9dc4-4856-80d1-18971f6e0720)
