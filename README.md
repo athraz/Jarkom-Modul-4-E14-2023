@@ -43,42 +43,405 @@ Dari tree diatas, didapatkan pembagian IP untuk masing-masing subnet sebagai ber
 Berikut konfigurasi pada masing-masing router, client, dan server untuk melakukan subnetting:
 
 - **Aura**
+
+```sh
+auto eth0
+iface eth0 inet dhcp
+up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.213.0.0/19
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.13
+	netmask 255.255.255.252
+auto eth2
+iface eth2 inet static
+	address 192.213.0.17
+	netmask 255.255.255.252
+auto eth3
+iface eth3 inet static
+	address 192.213.0.37
+	netmask 255.255.255.252
+```
 - **Frieren**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.14
+	netmask 255.255.255.252
+	gateway 192.213.0.13
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.9
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 192.213.0.65
+	netmask 255.255.255.224
+```
 - **Denken**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.38
+	netmask 255.255.255.252
+	gateway  192.213.0.37
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+auto eth1
+iface eth1 inet static
+	address 192.213.2.1
+	netmask 255.255.255.0
+```
 - **Eisen**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.18
+	netmask 255.255.255.252
+	gateway 192.213.0.17
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.33
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 192.213.0.49
+	netmask 255.255.255.248
+
+auto eth3
+iface eth3 inet static
+	address 192.213.0.29
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 192.213.0.21
+	netmask 255.255.255.252
+```
 - **Fern**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.2
+	netmask 255.255.255.252
+	gateway 192.213.0.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.24.1
+	netmask 255.255.248.0
+```
 - **Flamme**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.10
+	netmask 255.255.255.252
+	gateway 192.213.0.9
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.1
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 192.213.8.1
+	netmask 255.255.252.0
+
+auto eth3
+iface eth3 inet static
+	address 192.213.0.5
+	netmask 255.255.255.252
+```
 - **Himmel**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.6
+	netmask 255.255.255.252
+	gateway 192.213.0.5
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.41
+	netmask 255.255.255.248
+
+```
 - **Lawine**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.26
+	netmask 255.255.255.252
+	gateway 192.213.0.25
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.0.129
+	netmask 255.255.255.192
+```
 - **Heiter**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.131
+	netmask 255.255.255.192
+	gateway 192.213.0.129
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.12.1
+	netmask 255.255.252.0
+```
 - **Linie**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.22
+	netmask 255.255.255.252
+	gateway 192.213.0.21
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.4.1
+	netmask 255.255.254.0
+
+auto eth2
+iface eth2 inet static
+	address 192.213.0.25
+	netmask 255.255.255.252
+```
 - **Lugner**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.30
+	netmask 255.255.255.252
+	gateway 192.213.0.29
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+
+auto eth1
+iface eth1 inet static
+	address 192.213.16.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 192.213.1.1
+	netmask 255.255.255.0
+```
 - **LakeKorridor**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.66
+	netmask 255.255.255.224
+	gateway 192.213.0.65
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **LaubHills**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.24.2
+	netmask 255.255.248.0
+	gateway 192.213.24.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **AppetitRegion**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.24.3
+	netmask 255.255.248.0
+	gateway 192.213.24.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **RohrRoad**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.8.2
+	netmask 255.255.252.0
+	gateway 192.213.8.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **SchwerMountains**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.42
+	netmask 255.255.255.248
+	gateway 192.213.0.41
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **BredtRegion**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.130
+	netmask 255.255.255.192
+	gateway 192.213.0.129
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **RiegelCanyon**
-- **GranzChannel**  
-- **GrobeForest** 
-- **TurkRegion** 
-- **RoyalCapital**  
-- **WilleRegion** 
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.12.2
+	netmask 255.255.252.0
+	gateway 192.213.12.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+- **GranzChannel**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.4.2
+	netmask 255.255.254.0
+	gateway 192.213.4.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```  
+- **GrobeForest**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.1.2
+	netmask 255.255.255.0
+	gateway 192.213.1.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+``` 
+- **TurkRegion**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.16.2
+	netmask 255.255.252.0
+	gateway 192.213.16.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+``` 
+- **RoyalCapital**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.2.2
+	netmask 255.255.255.0
+	gateway 192.213.2.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```  
+- **WilleRegion**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.2.65
+	netmask 255.255.255.0
+	gateway 192.213.2.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+``` 
 - **Richter**
-- **Revolte**  
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.50
+	netmask 255.255.255.248
+	gateway 192.213.0.49
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
+- **Revolte**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.51
+	netmask 255.255.255.248
+	gateway 192.213.0.49
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```  
 - **Stark**
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.0.34
+	netmask 255.255.255.252
+	gateway 192.213.0.33
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 - **Sein** 
+```sh
+auto eth0
+iface eth0 inet static
+	address 192.213.12.3
+	netmask 255.255.252.0
+	gateway 192.213.12.1
+	up echo nameserver 192.168.122.1 > /etc/resolv.conf
+```
 
 ### Routing
 Berikut konfigurasi pada masing-masing router untuk melakukan routing:
 
 - **Aura**
+```sh
+route add -net 192.213.0.64 netmask 255.255.255.252 gw 192.213.0.14 
+route add -net 192.213.0.8 netmask 255.255.255.252 gw 192.213.0.14 
+route add -net 192.213.2.0 netmask 255.255.255.0 gw 192.213.0.38
+route add -net 192.213.0.32 netmask 255.255.255.252 gw 192.213.0.18
+route add -net 192.213.0.48 netmask 255.255.255.248 gw 192.213.0.18
+route add -net 192.213.0.28 netmask 255.255.255.252 gw 192.213.0.18
+route add -net 192.213.16.0 netmask 255.255.252.0 gw 192.213.0.18
+route add -net 192.213.1.0 netmask 255.255.255.0 gw 192.213.0.18
+route add -net 192.213.0.20 netmask 255.255.255.252 gw 192.213.0.18
+route add -net 192.213.4.0 netmask 255.255.254.0 gw 192.213.0.18
+route add -net 192.213.0.24 netmask 255.255.255.252 gw 192.213.0.18
+route add -net 192.213.0.0 netmask 255.255.255.252 gw 192.213.0.14
+route add -net 192.213.24.0 netmask 255.255.248.0 gw 192.213.0.14
+route add -net 192.213.8.0 netmask 255.255.252.0 gw 192.213.0.14
+route add -net 192.213.0.4 netmask 255.255.255.252 gw 192.213.0.14
+route add -net 192.213.0.40 netmask 255.255.255.248 gw 192.213.0.14
+route add -net 192.213.0.128 netmask 255.255.255.192 gw 192.213.0.18
+route add -net 192.213.12.0 netmask 255.255.252.0 gw 192.213.0.18
+```
 - **Frieren**
+```sh
+route add -net 192.213.0.0 netmask 255.255.255.252 gw 192.213.0.10
+route add -net 192.213.24.0 netmask 255.255.248.0 gw 192.213.0.10
+route add -net 192.213.8.0 netmask 255.255.252.0 gw 192.213.0.10
+route add -net 192.213.0.4 netmask 255.255.255.252 gw 192.213.0.10
+route add -net 192.213.0.40 netmask 255.255.255.248 gw 192.213.0.10
+```
 - **Flamme**
+```sh
+route add -net 192.213.24.0 netmask 255.255.248.0 gw 192.213.0.2
+route add -net 192.213.0.40 netmask 255.255.255.248 gw 192.213.0.6
+```
 - **Eisen**
+```sh
+route add -net 192.213.16.0 netmask 255.255.252.0 gw 192.213.0.30
+route add -net 192.213.1.0 netmask 255.255.255.0 gw 192.213.0.30
+route add -net 192.213.4.0 netmask 255.255.254.0 gw 192.213.0.22
+route add -net 192.213.0.24 netmask 255.255.255.252 gw 192.213.0.22
+route add -net 192.213.0.128 netmask 255.255.255.192 gw 192.213.0.22
+route add -net 192.213.12.0 netmask 255.255.252.0 gw 192.213.0.22
+```
 - **Lawine**
+```sh
+route add -net 192.213.12.0 netmask 255.255.252.0 gw 192.213.0.131
+```
 - **Linie**
+```sh
+route add -net 192.213.0.128 netmask 255.255.255.192 gw 192.213.0.26
+route add -net 192.213.12.0 netmask 255.255.252.0 gw 192.213.0.26
+```
 
 ### Testing
 Berikut beberapa hasil testing:
