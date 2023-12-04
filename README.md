@@ -481,6 +481,49 @@ Classless Inter Domain Routing, perhitungan pada teknik CIDR juga didasarkan pad
 
 ### Penggabungan
 
+- **Iterasi 1**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/6c21f32a-36be-410f-b0c6-7184b0bfec1c)
+
+- **Iterasi 2**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/40c7f5e5-3041-4106-8527-059d022a30e0)
+
+- **Iterasi 3**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/f06d2476-5525-4539-a116-0b4c3878deb1)
+
+- **Iterasi 4**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/13d64df1-300f-4032-b7a9-808e6fb054a6)
+
+- **Iterasi 5**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/7b566cbc-ed2f-497e-a812-20d3c17a6c0a)
+
+- **Iterasi 6**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/272c7fc4-8e33-4de3-8b0e-303061b09ddb)
+
+- **Iterasi 7**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/6730c922-3967-4f76-b18a-e053961be215)
+
+- **Iterasi 8**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/23d004e7-aa96-4e2a-8e3f-03f37a5e40d4)
+
+- **Iterasi 9**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/1597d2fa-4949-47a5-93db-9eaff032bef6)
+
+- **Iterasi 10**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/fd911bff-3a5e-4f8b-8047-d3f2b4dcdbf1)
+
+- **Iterasi 11**
+
+![image](https://github.com/athraz/Jarkom-Modul-4-E14-2023/assets/96050618/b665a304-57ea-4992-b5d1-0649065c5294)
 
 ### Tree
 Berikut tree pembagian IP metode CIDR:
